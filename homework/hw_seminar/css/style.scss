@@ -1,3 +1,7 @@
+@import 'catalog';
+
+$widthSite: 1140px;
+
 a {
     text-decoration: none;
     color:black
@@ -31,20 +35,19 @@ input:focus {
 	outline: none;
 }
 
+body {
+	font-family: 'Lato', sans-serif;
+}
+
 img {
-    overflow-clip-margin: content-box;
     overflow: clip;
 	max-width: 100%;
 }
 
 .center {
-	padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+	padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
 }
-/* 
-.top {
-	padding-bottom: 99px;
-} */
 
 .header {
 	display: flex;
@@ -115,22 +118,21 @@ img {
 	width: 14.5rem;
 	height: 39.625rem;
 	padding-bottom: 2rem;
-	/* display:none; */
+	// display:none;
 }
 
 .header:hover ~ .nav,
 .nav:hover {
     opacity: 1;
-	/* display: block; */
+	// display: block;
     z-index: 100;
-	/* background-color: #F16D7F; */
 }
 
-.nav:hover .nav {
-	opacity: 1;
-	z-index: 100;
-	display: block;
-}
+// .nav:hover .nav {
+// 	opacity: 1;
+// 	z-index: 100;
+// 	display: block;
+// }
 
 .nav_menu {
 	color: #000;
@@ -589,6 +591,10 @@ img {
 
 .footer_footer_brands_img{
 	margin-top: 0.5rem;
+}
+
+.banned_brands {
+    display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
