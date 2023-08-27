@@ -119,6 +119,9 @@
 		
 			&_p {
 				margin-right: 0.62rem;
+                &:hover {
+                    @extend %hover_effect;
+                }
 			}
 		
 			&_size_submenu {
@@ -155,13 +158,14 @@
         &_add_to_cart {
             display: flex;
             align-items: center;
-            width: 13.25rem;
+            width: 12rem;
             height: 3.02538rem;
             border: #F26376 0.06rem solid;
             padding-left: 1.5rem;
+            transition: .3s;
 
             &_p {
-                width: 5.125rem;
+                // width: 5.125rem;
                 height: 1.19756rem;
                 color: #F26376;
                 font-family: Lato;
@@ -171,6 +175,18 @@
             }
         }
     }
+}
+.product_content_add_to_cart:hover {
+    background-color: #F26376;
+}
+
+.product_content_add_to_cart:hover .product_content_add_to_cart_svg path {
+    fill: #FFF;
+}
+
+.product_content_add_to_cart:hover  .product_content_add_to_cart_p {
+
+    color: #FFF;
 }
 
 .items_block {

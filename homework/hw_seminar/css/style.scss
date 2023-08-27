@@ -12,7 +12,7 @@ li {
 	list-style-type: none;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button {
 	background: none;
 	color: inherit;
 	border: none;
@@ -22,7 +22,8 @@ button, input[type="submit"], input[type="reset"] {
 	outline: none;
 }
 
-input[type="email"] {
+input[type="email"], 
+input[type="numder"] {
 	border: none;
 	outline: none;
 }
@@ -33,11 +34,25 @@ input:focus {
 
 @import 'catalog';
 @import 'product';
+@import 'cart';
 
 $widthSite: 1140px;
 
+%hover_for_white_button {
+    background-color: #F16D7F;
+    border: 1px solid #F16D7F;
+    color: #fff;
+}
+
+%hover_effect {
+	color: #F16D7F;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
+	color: #575757;
+	font-style: normal;
+	line-height: normal;
 }
 
 img {
@@ -354,6 +369,7 @@ img {
 	z-index: -1;
     align-items: center;
     justify-content: space-evenly;
+	transition: .2s;
 }
 
 .block_it:hover .add_to_cart {
@@ -393,12 +409,17 @@ img {
 	margin-left: auto;
     margin-right: auto;
 	margin-bottom: 3.75rem;
+	transition: .3s;
+
+	&:hover {
+		@extend %hover_for_white_button;
+	}
 }
 
-.items_button:hover {
-	color: #FFF;
-	background-color: #F16D7F;
-}
+// .items_button:hover {
+// 	color: #FFF;
+// 	background-color: #F16D7F;
+// }
 
 .footer_top {
 	background-color: #222224;

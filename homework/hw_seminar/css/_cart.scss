@@ -1,0 +1,233 @@
+%flex_justify-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+%hover_for_white_button {
+    background-color: #F16D7F;
+    border: 1px solid #F16D7F;
+    color: #fff;
+}
+
+.cart {
+    @extend %flex_justify-content;
+
+    &_products {
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+
+        &_cards {
+            margin-bottom: 4,5rem;
+
+            &_card {
+                display:flex;
+                height: 19.125rem;
+                box-shadow: 20px 20px 20px #e3e3e3;
+                margin-bottom: 2.5rem;
+
+                &_img {
+                    width: 16.375rem;
+                    height: 100%;
+                    background-color: #F3EEEF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_i {
+                        max-height: 100%;
+                    }
+                }
+
+                &_content {
+                    padding: 1.37rem 1.37rem 0 1.94rem;
+                    width: 24.375rem;
+
+                    &_name {
+                        @extend %flex_justify-content;
+
+                        &_h2 {
+                            color: #222;
+                            font-family: Lato;
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                        }
+
+                        &_vector {
+                            margin-top: 0.4rem;
+                            &:hover path{
+                                fill: #F16D7F;
+                            }
+                        }
+
+                    }
+
+                    &_info {
+                        margin-top: 2.62rem;
+                        color: #575757;
+                        font-family: Lato;
+                        font-size: 1.375rem;
+                        font-weight: 400;
+
+                        &_name {
+                            margin-bottom: 0.38rem;
+
+                            &_input {
+                                color: #6F6E6E;
+                                width: 1.75rem;
+                                height: 1.55931rem;
+                                margin-left: 1.5rem;
+                                font-size: 1.25rem;
+                                padding-left: 1rem;
+                                border: 1px solid #EAEAEA;
+                            }
+                    
+                            &_span_price {
+                                color: #EF5B70;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        &_continuation_options {
+            @extend %flex_justify-content;
+            margin-top: 5.56rem;
+            
+            &_left,
+            &_right {
+                color: #000;
+                font-family: Lato;
+                font-size: 0.875rem;
+                font-weight: 300;
+                padding-top: 1.06rem;
+                padding-left: 2.44rem;
+                padding-bottom: 1rem;
+                border: #A4A4A4 1px solid;
+            }
+
+            &_left {
+                padding-right: 2.65rem;
+                transition: .3s;
+
+                &:hover {
+                    @extend %hover_for_white_button;
+                }
+            }
+            &_right {
+                padding-right: 2.5rem;
+                transition: .3s;
+
+                &:hover {
+                    @extend %hover_for_white_button;
+                }
+            }
+        }
+    }
+
+    &_forms {
+        margin-top: 7.06rem;
+
+        &_adress {
+            font-size: 1rem;
+            margin-bottom: 3.56rem;
+
+            &_input {
+                width: 21.45rem;
+                height: 2.8125rem;
+                font-size: 0.8125rem;
+                margin-top: 1.28rem;
+                padding-left: 1.05rem;
+                border: 1px solid #A4A4A4;
+                color: #222;
+                font-family: Lato;
+                font-weight: 300;
+            }
+
+            &_input_submit {
+                margin-top: 1.47rem;
+                font-size: 0.6875rem;
+                background-color: #fff;
+                color: #4A4A4A;
+                font-family: Lato;
+                font-weight: 300;
+                width: 6.338rem;
+                height: 2.1875rem;
+                border: 1px solid #A4A4A4;
+                transition: .3s;
+
+                &:hover {
+                    @extend %hover_for_white_button;
+                }
+            }    
+        }
+
+        &_total {
+            width: 22.5rem;
+            background-color: #F5F3F3;
+            padding-top: 2.44rem;
+            text-align: center;
+
+            &_sub {
+                text-align: right;
+                color: #4A4A4A;
+                font-family: Lato;
+                font-size: 0.6875rem;
+                font-weight: 400;
+                margin-right: 2.12rem;
+
+                &_span {
+                    margin-left: 1.5rem;
+                }
+            }
+
+            &_grand {
+                text-align: right;
+                margin-top: 0.75rem;
+                margin-right: 2.31rem;
+                color: #222;
+                font-family: Lato;
+                font-size: 1rem;
+                font-weight: 300;
+
+                &_span {
+                    margin-left: 1.5rem;
+                    color: #F16D7F;
+                    font-family: Lato;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+
+            &_vector_line {
+                margin-left: 2.69rem;
+                margin-top: 1.31rem;
+                margin-bottom: 1.06rem;
+                width: 17.1875rem;
+                height: 0.0625rem;
+                background-color: #E2E2E2;
+            }
+
+            &_button {
+                width: 17.0625rem;
+                height: 3.125rem;
+                background-color: #F16D7F;
+                color: #FFF;
+                font-family: Lato;
+                font-size: 1rem;
+                font-weight: 300;
+                margin-bottom: 2.62rem;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #F16D7F;
+                }
+            }
+        }
+        
+    }
+
+}

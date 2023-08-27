@@ -43,6 +43,14 @@
 			position: relative;
 			align-items: center;
 		}
+
+		&_logo:hover,
+		&_submenu_a:hover,
+		&_menu_trending:hover,
+		&_menu_size:hover,
+		&_menu_price:hover {
+			@extend %hover_effect;
+		}
 	
 		&_text,
 		&_text_submenu {
@@ -90,7 +98,7 @@
 				background: #FFF;
 				box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
 				// display: none;
-				padding-bottom: 0.75rem;
+				padding-top: 0.56rem;
 			}
 			
 			&_size:hover .filter_menu_size_submenu,
@@ -100,13 +108,24 @@
 				opacity: 1;
 			}
 			
-			&_size_submenu_li {
-				margin: 0.56rem;
+			&_size_submenu_checkbox {
+				margin-left: 0.56rem;
+				// margin-top: 0.56rem;
+				margin-bottom: 0.75rem;
+				vertical-align: middle;
+				&_span {
+					vertical-align: top;
+					color: #6F6E6E;
+					font-family: Roboto;
+					font-size: 0.875rem;
+					font-weight: 400;
+					margin-left: 0.56rem;
+				}
 			}
 			
-			&_size_submenu_svg {
-				margin-right: 0.56rem;
-			}
+			// &_size_submenu_svg {
+			// 	margin-right: 0.56rem;
+			// }
 		}
 	
 		&_submenu {
@@ -199,7 +218,7 @@
     justify-content: center;
     align-items: center;
 
-	.pagination {
+	&_pagination {
 		gap: 1.3rem;
 		display: flex;
 		justify-content: center;
@@ -207,14 +226,21 @@
 		margin-top: 3rem;
 		margin-bottom: 6rem;
 	}
-	.page-link {
+	&_page-link {
 		color: #C4C4C4;
 		font-family: Lato;
 		font-size: 1rem;
 		font-weight: 300;
 	}
 
-	.active {
+	&_active {
+		color: #EF5B70;
+	}
+
+	&_page_link_vector_left:hover path,
+	&_page_link_vector_right:hover path,
+	&_page_item:hover .page-link {
+		fill: #EF5B70;
 		color: #EF5B70;
 	}
 }
