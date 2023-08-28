@@ -22,12 +22,6 @@ button {
   outline: none;
 }
 
-input[type=email],
-input[type=numder] {
-  border: none;
-  outline: none;
-}
-
 input:focus {
   outline: none;
 }
@@ -376,7 +370,7 @@ input:focus {
   margin-bottom: 8rem;
 }
 
-.cart_products_continuation_options, .cart_products_cards_card_content_name, .cart {
+.registration, .cart_products_continuation_options, .cart_products_cards_card_content_name, .cart {
   display: flex;
   justify-content: space-between;
 }
@@ -557,6 +551,96 @@ input:focus {
   color: #F16D7F;
 }
 
+.registration_forms_name_first, .registration_forms_name_last, .registration_forms_email, .registration_forms_password {
+  width: 21.42rem;
+  height: 2.8125rem;
+  color: #B1B1B1;
+  border: 1px solid #B1B1B1;
+  padding-left: 1.08rem;
+  margin-top: 1.28rem;
+}
+
+.registration {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+.registration_forms {
+  width: 22.5rem;
+}
+.registration_forms_name {
+  color: #222;
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.registration_forms_gender {
+  margin-top: 1.97rem;
+}
+.registration_forms_gender_male, .registration_forms_gender_female {
+  color: #000;
+  font-family: Lato;
+  font-size: 0.6875rem;
+  font-weight: 300;
+  margin-left: 0.62rem;
+  margin-right: 1.25rem;
+}
+.registration_forms_details {
+  color: #222;
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 2.06rem;
+}
+.registration_forms_info {
+  margin-top: 0.94rem;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 0.8125rem;
+  font-weight: 300;
+}
+.registration_forms_button {
+  margin-top: 2.44rem;
+  width: 10.4375rem;
+  height: 3.125rem;
+  background-color: #F16D7F;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.81rem;
+  padding-right: 1.26rem;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  transition: 0.3s;
+}
+.registration_forms_button:hover {
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  background-color: #FFF;
+}
+.registration_content {
+  color: #000;
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.registration_content_header {
+  margin-bottom: 1.37rem;
+}
+.registration_content_offer {
+  margin-bottom: 1.31rem;
+}
+.registration_content_ul_li {
+  margin-bottom: 1rem;
+}
+.registration_content_ul_li_img {
+  margin-right: 1.44rem;
+}
+
 .items_button:hover, .cart_products_continuation_options_left:hover, .cart_products_continuation_options_right:hover, .cart_forms_adress_input_submit:hover {
   background-color: #F16D7F;
   border: 1px solid #F16D7F;
@@ -565,6 +649,11 @@ input:focus {
 
 .filter_block .filter_logo:hover, .filter_block .filter_submenu_a:hover, .filter_block .filter_menu_trending:hover, .filter_block .filter_menu_size:hover, .filter_block .filter_menu_price:hover, .product_card .product_content_filter_menu_p:hover {
   color: #F16D7F;
+}
+
+.cart, .cart_products_cards_card_content_name, .cart_products_continuation_options, .registration {
+  display: flex;
+  justify-content: space-between;
 }
 
 body {
@@ -1055,6 +1144,8 @@ img {
 }
 
 .email {
+  border: none;
+  outline: none;
   background-color: #E1E1E1;
   width: 14rem;
   height: 3.0625rem;

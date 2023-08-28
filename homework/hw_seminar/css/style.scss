@@ -22,12 +22,6 @@ button {
 	outline: none;
 }
 
-input[type="email"], 
-input[type="numder"] {
-	border: none;
-	outline: none;
-}
-
 input:focus {
 	outline: none;
 }
@@ -35,6 +29,7 @@ input:focus {
 @import 'catalog';
 @import 'product';
 @import 'cart';
+@import 'registration';
 
 $widthSite: 1140px;
 
@@ -46,6 +41,11 @@ $widthSite: 1140px;
 
 %hover_effect {
 	color: #F16D7F;
+}
+
+%flex_justify-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 body {
@@ -552,6 +552,8 @@ img {
 }
 
 .email {
+	border: none;
+	outline: none;
 	background-color: #E1E1E1;
 	width: 14rem;
 	height: 3.0625rem; 
