@@ -28,10 +28,9 @@
 }
 
 .filter_block {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
 	align-items: center;
-	gap: 3rem;
+	gap: 20rem;
 	height: 8.37rem;
 
 	.filter {
@@ -72,10 +71,13 @@
 			&_size,
 			&_price {
 				display: flex;
-				margin-right: 1.75rem;
 				align-items: center;
 				position: relative;
 				height: 2rem;
+
+				&_m-l {
+					margin-left: 1.75rem;
+				}
 			}
 		
 			&_vector {
@@ -97,13 +99,11 @@
 				height: 6.4375rem;
 				background: #FFF;
 				box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-				// display: none;
 				padding-top: 0.56rem;
 			}
 			
 			&_size:hover .filter_menu_size_submenu,
 			&_size_submenu:hover {
-				// display: block;
 				z-index: 1000;
 				opacity: 1;
 			}
@@ -123,9 +123,6 @@
 				}
 			}
 			
-			// &_size_submenu_svg {
-			// 	margin-right: 0.56rem;
-			// }
 		}
 	
 		&_submenu {
@@ -245,4 +242,27 @@
 	}
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
 
+	.nav_info_h5 {
+		padding-right: 1rem;
+	}
+
+	.filter_block {
+		// height: 0;
+		display: flex;
+		padding-top: 1.5rem;
+		justify-content: space-between;
+		margin-right: 1rem;
+	}
+
+	.filter {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.block_mobile_none {
+		display: none;
+	}
+
+}

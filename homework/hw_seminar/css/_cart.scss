@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
 }
+%flex_justify-content_mobile {
+    display: flex;
+    justify-content: center;
+}
 
 %hover_for_white_button {
     background-color: #F16D7F;
@@ -85,8 +89,6 @@
                                 color: #EF5B70;
                             }
                         }
-
-
                     }
                 }
             }
@@ -166,6 +168,7 @@
 
         &_total {
             width: 22.5rem;
+            height: 13.375rem;
             background-color: #F5F3F3;
             padding-top: 2.44rem;
             text-align: center;
@@ -230,4 +233,40 @@
         
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav_info_h3,
+    .cart {
+        margin-left: 1rem;
+        margin-right: 1.13rem;
+        flex-direction: column;
+    }
+
+    .cart_products {
+        margin-top: 3.69rem;
+        margin-bottom: 0;
+                    display: block;
+
+        &_continuation_options {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+    }
+
+    .cart_forms {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        &_total {
+            margin-top: 2.44rem;
+            height: 10.935rem;
+
+            &_button {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

@@ -10,7 +10,9 @@
 .registration {
     padding-top: 4rem;
     padding-bottom: 6rem;
-    @extend %flex_justify-content;
+    display: flex;
+    gap: 8.03rem;
+    
 
     &_forms {
         width: 22.5rem;
@@ -107,5 +109,23 @@
                 margin-right: 1.44rem;
             }
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .registration {
+        gap: 0;
+    }
+
+    .nav_info_h3,
+    .registration_forms {
+        margin-left: 1rem;
+        margin-right: 1.38rem;
+    }
+
+    .registration_content {
+       font-size: 1rem;
+       margin-right: 1rem;
     }
 }

@@ -192,3 +192,14 @@
 .items_block {
     margin-bottom: 8rem;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .product_content_center {
+        display: flex;
+    }
+
+    .block_mobile_none {
+		display: none;
+	}
+}
