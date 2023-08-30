@@ -43,11 +43,6 @@ $widthSite: 1140px;
     justify-content: space-between;
 }
 
-@import 'catalog';
-@import 'cart';
-@import 'registration';
-@import 'product';
-
 body {
 	font-family: 'Lato', sans-serif;
 	color: #575757;
@@ -476,7 +471,7 @@ img {
 .footer_center { 
 	position: relative;
 	text-align: center;
-	height: 28rem;
+	// height: 28rem;
     width: 100vw;
 }
 
@@ -627,7 +622,16 @@ img {
     display: none;
 }
 
+@import 'product';
+@import 'catalog';
+@import 'cart';
+@import 'registration';
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
+	.nav_info_h5 {
+		margin-right: 1rem;
+	}
 	.logo {
 		margin-left: 2rem;
 	}
@@ -671,10 +675,12 @@ img {
 	.footer_top,
 	.footer_center,
 	.footer_center_content {
-		display: grid;
-		align-items: center;
-		justify-items: center;
-		grid-template-columns: repeat(1, 1fr);
+		// display: grid;
+		// align-items: center;
+		// justify-items: center;
+		// grid-template-columns: repeat(1, 1fr);
+		display: flex;
+		flex-direction: column
 	}
 
 	.footer_top {
@@ -712,8 +718,6 @@ img {
 	.footer_footer_brands {
 		margin-right: 2.02rem;
 	}
-
-
 }
 
 @media (min-width: 320px) and (max-width: 767px) {	

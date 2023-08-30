@@ -12,7 +12,6 @@
     padding-bottom: 6rem;
     display: flex;
     gap: 8.03rem;
-    
 
     &_forms {
         width: 22.5rem;
@@ -102,15 +101,21 @@
             margin-bottom: 1.31rem;
         }
 
-        &_ul_li {
-            margin-bottom: 1rem;
+        &_ul {
+            // Не могу применить изображенине для маркера! Для бэкграуда тоже перестало работать изображение
+            list-style-image: url('img/vector_li_registration.png');
+            height: 100%;
+            width: 100%;
 
-            &_img {
-                margin-right: 1.44rem;
+
+            &_li {
+                margin-bottom: 1rem;
+                margin-left: 1.44rem;
             }
         }
     }
 }
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
