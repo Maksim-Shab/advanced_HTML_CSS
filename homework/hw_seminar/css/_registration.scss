@@ -14,7 +14,7 @@
     gap: 8.03rem;
 
     &_forms {
-        width: 22.5rem;
+        width: 100%;
 
         &_name {
             color: #222;
@@ -28,6 +28,7 @@
         &_email,
         &_password {
             @extend %reg_input_style;
+            width: calc(100% - 1.08rem);
         }
 
         &_gender {
@@ -102,15 +103,13 @@
         }
 
         &_ul {
-            // Не могу применить изображенине для маркера! Для бэкграуда тоже перестало работать изображение
-            list-style-image: url('img/vector_li_registration.png');
+            list-style-image: url("data:image/svg+xml,%3Csvg width='30' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z' fill='black'/%3E%3C/svg%3E%0A");
             height: 100%;
             width: 100%;
 
-
             &_li {
                 margin-bottom: 1rem;
-                margin-left: 1.44rem;
+                margin-left: 2rem;
             }
         }
     }
@@ -132,5 +131,20 @@
     .registration_content {
        font-size: 1rem;
        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .registration {
+        flex-direction: column;
+        padding-top: 2.53rem;
+        padding-left: 0.53rem;
+        padding-right: 0.53rem;
+        gap: 2.44rem;
+
+        &_content {
+            font-size: 1rem;
+        }
     }
 }
